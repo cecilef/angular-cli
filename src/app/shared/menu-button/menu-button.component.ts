@@ -1,15 +1,14 @@
 import { Component, EventEmitter, HostListener, OnInit, Output } from '@angular/core';
+import { MenuButtonService } from '../../providers/menu-button.service';
 
 @Component({
-  selector: 'cf-dropdown-menu',
+  selector: 'cf-menu-button',
   templateUrl: './menu-button.component.html',
   styleUrls: ['./menu-button.component.scss']
 })
-export class DropdownMenuComponent implements OnInit {
+export class MenuButtonComponent implements OnInit {
 
-  @Output() buttonClicked: EventEmitter<any> = new EventEmitter<any>();
-
-  constructor() {
+  constructor(private menuButtonService: MenuButtonService) {
   }
 
   ngOnInit() {
@@ -17,6 +16,6 @@ export class DropdownMenuComponent implements OnInit {
 
   @HostListener('click', ['$event'])
   onClick($event) {
-    this.buttonClicked.emit();
+    this.menuButtonService.emitClickAction();
   }
 }

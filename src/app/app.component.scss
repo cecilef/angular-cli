@@ -1,3 +1,22 @@
 :host {
   display: block;
 }
+
+.cv-icon {
+  background: url('../assets/img/businesswoman.svg');
+}
+
+.blog-icon {
+  background: url('../assets/img/blog.svg');
+}
+
+.home-icon {
+  background: url('../assets/img/home.svg');
+}
+
+.item-img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-size: 40px;
+}

@@ -1,2 +1,13 @@
 <cf-top-bar></cf-top-bar>
+<side-panel [open]="panelOpen">
+  <menu-item [label]="'Home'" [routerLink]="'.'">
+    <span class="item-img home-icon"></span>
+  </menu-item>
+  <menu-item [label]="'CV'" [routerLink]="'.'">
+    <span class="item-img cv-icon"></span>
+  </menu-item>
+  <menu-item [label]="'Blog'" [routerLink]="'.'">
+    <span class="item-img blog-icon"></span>
+  </menu-item>
+</side-panel>
 <router-outlet></router-outlet>

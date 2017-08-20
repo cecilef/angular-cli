@@ -5,6 +5,7 @@ import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { appRoutes } from './app.routing';
+import { MenuButtonService } from './providers/menu-button.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,9 @@ import { appRoutes } from './app.routing';
     SharedModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [
+    MenuButtonService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
