@@ -1,0 +1,31 @@
+:host {
+  align-self: center;
+  padding: 10px 15px;
+
+  // TODO: add hover/active/selected styles
+}
+
+ul {
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.app-menu__button {
+  background-image: url("../../../assets/img/menu-button.svg");
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+  cursor: pointer;
+}

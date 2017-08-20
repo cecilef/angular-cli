@@ -1,18 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './navigation/top-bar/top-bar.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedModule } from './shared/shared.module';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { appRoutes } from './app.routing';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopBarComponent
+    TopBarComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule,
-    BrowserAnimationsModule
+    RouterModule,
+    SharedModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
