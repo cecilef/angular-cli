@@ -2,20 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { TopMenuComponent } from './navigation/top-menu.component';
-import { MdIconModule, MdMenuModule } from '@angular/material';
+import { TopBarComponent } from './navigation/top-bar/top-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopMenuComponent
+    TopBarComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
-    MdMenuModule,
-    MdIconModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
