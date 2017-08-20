@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DropdownMenuComponent } from './menu-button/menu-button.component';
+import { MenuButtonComponent } from './menu-button/menu-button.component';
 import { MenuItemComponent } from './menu-item/menu-item.component';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,11 +15,12 @@ import { SidePanelComponent } from './side-panel/side-panel.component';
     RouterModule
   ],
   exports: [
-    DropdownMenuComponent,
-    MenuItemComponent
+    MenuButtonComponent,
+    MenuItemComponent,
+    SidePanelComponent
   ],
   declarations: [
-    DropdownMenuComponent,
+    MenuButtonComponent,
     MenuItemComponent,
     SidePanelComponent
   ]

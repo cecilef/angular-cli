@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import 'snapsvg-cjs';
+declare var Snap: any;
 
 @Component({
   selector: 'app-home',

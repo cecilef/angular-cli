@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  position: absolute;
+}
+
+.side-panel {
+  height: calc(100% - 60px);
+  width: 200px;
+  margin-left: -200px;
+
+  &.open {
+    margin-left: 0;
+  }
+}
