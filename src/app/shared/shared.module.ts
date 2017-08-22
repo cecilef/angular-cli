@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { SidePanelComponent } from './side-panel/side-panel.component';
+import { FocusDirective } from './directives/focus/focus.directive';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { SidePanelComponent } from './side-panel/side-panel.component';
   declarations: [
     MenuButtonComponent,
     MenuItemComponent,
-    SidePanelComponent
+    SidePanelComponent,
+    FocusDirective
   ]
 })
 export class SharedModule { }

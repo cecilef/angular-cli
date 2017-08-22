@@ -3,8 +3,9 @@
 :host {
   align-self: center;
   padding: 8px $space-l;
+  cursor: pointer;
 
-  &:hover {
+  &:hover, &.active {
     background-color: $dark-green;
   }
 
