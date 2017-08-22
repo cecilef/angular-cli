@@ -1,15 +1,15 @@
 <cf-top-bar></cf-top-bar>
 <side-panel [open]="panelOpen">
-  <menu-item [label]="'Home'" [routerLink]="'.'">
+  <menu-item [label]="'Home'" [routerLink]="'home'" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
     <span class="item-img home-icon"></span>
   </menu-item>
-  <menu-item [label]="'CV'" [routerLink]="'.'">
+  <menu-item [label]="'CV'" [routerLink]="'cv'">
     <span class="item-img cv-icon"></span>
   </menu-item>
-  <menu-item [label]="'Blog'" [routerLink]="'.'">
+  <menu-item [label]="'Blog'" [routerLink]="'blog'">
     <span class="item-img blog-icon"></span>
   </menu-item>
-  <menu-item [label]="'Contact'" [routerLink]="'.'">
+  <menu-item [label]="'Contact'" [routerLink]="'contact'">
     <span class="item-img contact-icon"></span>
   </menu-item>
 </side-panel>

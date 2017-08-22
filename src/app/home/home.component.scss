@@ -2,3 +2,18 @@
   display: block;
   margin-top: 60px;
 }
+
+.section-image {
+  width: 100%;
+  height: 100%;
+}
+
+.introduction {
+  background: url('../../assets/img/introduction.svg');
+  background-size: contain;
+}
+
+.explore {
+  background: url('../../assets/img/explore.svg');
+  background-size: contain;
+}
