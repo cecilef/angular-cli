@@ -1,10 +1,10 @@
-@import '../../../assets/styles/colors';
+@import '../../../styles';
 
 :host {
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 5px 0;
+  padding: $space-s 0;
 
   &:hover {
     background-color: $darker-green;
@@ -21,9 +21,9 @@ a {
 }
 
 .item-icon {
-  padding-left: 5px;
+  padding-left: $space-m;
 }
 
 .item-link {
-  padding-left: 15px;
+  padding-left: $space-l;
 }
