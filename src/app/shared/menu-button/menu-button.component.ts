@@ -21,9 +21,4 @@ export class MenuButtonComponent implements OnInit {
     this.active = !this.active;
     this.menuButtonService.emitClickAction();
   }
-
-  @HostListener('blur', ['$event'])
-  onBlur($event) {
-    console.log('blur');
-  }
 }

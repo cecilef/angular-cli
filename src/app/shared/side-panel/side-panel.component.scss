@@ -1,9 +1,9 @@
-@import '../../../assets/styles/colors';
+@import '../../../styles';
 
 :host {
   display: block;
   position: absolute;
-  top: 0;
+  top: $space-none;
 }
 
 .side-panel {
@@ -15,10 +15,10 @@
   border: 1px solid $dark-grey;
   border-top: 0;
 
-  transition: all ease 500ms;
+  transition: all ease $slow;
 
   &.open {
-    margin-left: 0;
-    margin-top: 60px;
+    margin-left: $space-none;
+    margin-top: $topbar-height;
   }
 }

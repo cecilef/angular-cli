@@ -1,4 +1,5 @@
-@import "colors";
+@import 'colors';
+@import 'variables';
 
 body {
   background-color: $light-green;
@@ -9,5 +10,5 @@ body {
 a {
   color: $text-color-white;
   text-decoration: none;
-  transition: all ease 300ms;
+  transition: all ease $average-speed;
 }
