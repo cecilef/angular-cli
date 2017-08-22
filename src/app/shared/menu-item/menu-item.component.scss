@@ -1,12 +1,29 @@
+@import '../../../styles';
+
 :host {
   display: flex;
   align-items: center;
-}
+  cursor: pointer;
+  padding: $space-s $space-none;
 
-li {
-  list-style: none;
+  &:hover {
+    background-color: $darker-green;
+  }
+  &:focus {
+    outline: 0;
+  }
+
+  transition: all ease $average-speed;
 }
 
 a {
   text-decoration: none;
+}
+
+.item-icon {
+  padding-left: $space-m;
+}
+
+.item-link {
+  padding-left: $space-l;
 }

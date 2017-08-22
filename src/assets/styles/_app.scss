@@ -1,7 +1,14 @@
-@import "colors";
+@import 'colors';
+@import 'variables';
 
 body {
   background-color: $light-green;
   margin: 0;
   overflow: hidden;
+}
+
+a {
+  color: $text-color-white;
+  text-decoration: none;
+  transition: all ease $average-speed;
 }

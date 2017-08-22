@@ -1,14 +1,24 @@
+@import '../../../styles';
+
 :host {
   display: block;
   position: absolute;
+  top: $space-none;
 }
 
 .side-panel {
   height: calc(100% - 60px);
   width: 200px;
-  margin-left: -200px;
+  margin-left: -202px;
+  margin-top: -202px;
+  background-color: $dark-green;
+  border: 1px solid $dark-grey;
+  border-top: 0;
+
+  transition: all ease $slow;
 
   &.open {
-    margin-left: 0;
+    margin-left: $space-none;
+    margin-top: $topbar-height;
   }
 }
