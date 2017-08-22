@@ -2,7 +2,13 @@
 
 :host {
   align-self: center;
-  padding: $space-m $space-l;
+  padding: 8px $space-l;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  transition: all ease 300ms;
 }
 
 ul {
