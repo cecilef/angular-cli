@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { appRoutes } from './app.routing';
 import { MenuButtonService } from './providers/menu-button.service';
 import { HeaderImageComponent } from './home/header-image/header-image.component';
+import { CvComponent } from './cv/cv.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { HeaderImageComponent } from './home/header-image/header-image.component
     AppComponent,
     TopBarComponent,
     HomeComponent,
-    HeaderImageComponent
+    HeaderImageComponent,
+    CvComponent
   ],
   providers: [
     MenuButtonService
