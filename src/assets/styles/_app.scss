@@ -5,3 +5,15 @@ body {
   margin: 0;
   overflow: hidden;
 }
+
+a {
+  &:active {
+    color: $dark-grey;
+  }
+  &:hover {
+    color: $light-grey;
+  }
+  color: $text-color-white;
+  text-decoration: none;
+  transition: all ease 300ms;
+}
