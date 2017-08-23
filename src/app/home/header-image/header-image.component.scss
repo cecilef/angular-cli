@@ -1,0 +1,17 @@
+:host {
+  display: block;
+}
+
+.header-image {
+  background: url('../../../assets/img/landscape.jpg');
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-container {
+  height: 500px;
+  width: 100%;
+}

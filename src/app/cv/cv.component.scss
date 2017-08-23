@@ -1,0 +1,9 @@
+@import '../../styles';
+
+:host {
+  display: block;
+}
+
+.cv-title {
+  padding-top: $space-xl;
+}

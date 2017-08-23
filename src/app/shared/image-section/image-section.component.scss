@@ -1,0 +1,40 @@
+:host {
+  display: block;
+  margin: 20px;
+}
+
+.image-section__container {
+  display: flex;
+  flex-direction: row;
+
+  &.left {
+    text-align: left;
+    justify-content: flex-start;
+    & > .image-container {
+      order: 1;
+    }
+    & > .section-description__container {
+      order: 2;
+    }
+  }
+
+  &.right {
+    text-align: right;
+    justify-content: flex-end;
+    & > .section-description__container {
+      order: 1;
+    }
+    & > .image-container {
+      order: 2;
+    }
+  }
+}
+
+.image-container {
+  width: 250px;
+  height: 250px;
+}
+
+.section-description__container {
+  margin: 40px;
+}

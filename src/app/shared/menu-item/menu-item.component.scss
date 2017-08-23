@@ -6,7 +6,7 @@
   cursor: pointer;
   padding: $space-s $space-none;
 
-  &:hover {
+  &.active, &:hover {
     background-color: $darker-green;
   }
   &:focus {
