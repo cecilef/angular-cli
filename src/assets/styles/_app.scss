@@ -1,15 +1,20 @@
 @import 'colors';
 @import 'variables';
 
+@font-face {
+  font-family: 'Lato';
+  src: url("/src/assets/fonts/Lato-Regular.ttf") format("ttf");
+}
+
 body {
   background-color: $light-green;
   margin: 0;
   overflow: auto;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 a {
-  color: $text-color-white;
+  color: $white;
   text-decoration: none;
   transition: all ease $average-speed;
 }

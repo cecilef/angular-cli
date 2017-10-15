@@ -8,14 +8,14 @@ import { MenuButtonService } from './providers/menu-button.service';
 })
 export class AppComponent implements OnInit {
 
-  panelOpen: boolean = false;
+  menuOpen: boolean = false;
 
   constructor(private menuButtonService: MenuButtonService) {
   }
 
   ngOnInit() {
-    this.menuButtonService.menu$.subscribe(() => {
-      this.panelOpen = !this.panelOpen;
+    this.menuButtonService.open$.subscribe((open) => {
+      this.menuOpen = open;
     });
   }
 }

@@ -14,11 +14,12 @@ export class MenuButtonComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.menuButtonService.open$.subscribe(open => this.active = open );
   }
 
   @HostListener('click', ['$event'])
   onClick($event) {
     this.active = !this.active;
-    this.menuButtonService.emitClickAction();
+    this.menuButtonService.open$.next(this.active);
   }
 }

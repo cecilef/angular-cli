@@ -3,7 +3,7 @@
 :host {
   display: inline-block;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: $space-none;
   z-index: 9999;
   box-shadow: 0px -5px 22px 10px rgba(0, 0, 0, 0.75);
@@ -11,7 +11,7 @@
 
 .top-menu {
   background-color: $darker-green;
-  color: $text-color-white;
+  color: $white;
   width: 100%;
   height: $topbar-height;
   display: flex;
