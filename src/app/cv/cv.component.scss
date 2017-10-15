@@ -2,9 +2,47 @@
 
 :host {
   display: block;
+  padding-top: 20px;
 }
 
 .cv-title {
-  border: 3px solid transparent;
-  border-image: linear-gradient(to bottom, $white 0%, $darker-green 100%);
+  padding: $space-m;
+  width: 25%;
+  margin: auto;
+  text-align: center;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, $white 0%, $darker-green 100%) 1;
+}
+
+h3 {
+  text-align: center;
+}
+
+.selfie {
+  background: url("../../assets/img/selfie.jpg");
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  background-position: -40px -30px;
+  background-size: 270px;
+  border-radius: 50%;
+}
+
+.cv-section {
+  float: left;
+  width: 100%;
+}
+
+.cv-experience, .cv-skills-education {
+  float: left;
+  // TODO: find a way to insert vertical separator
+  width: 49%;
+}
+
+.cv-experience {
+  text-align: right;
+}
+
+.cv-skills-education {
+  text-align: left;
 }

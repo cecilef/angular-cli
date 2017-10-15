@@ -5,7 +5,7 @@ import { MenuItemComponent } from './menu-item/menu-item.component';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
-import { SidePanelComponent } from './side-panel/side-panel.component';
+import { MenuComponent } from './menu/menu.component';
 import { FocusDirective } from './directives/focus/focus.directive';
 import { ImageSectionComponent } from './image-section/image-section.component';
 
@@ -19,13 +19,13 @@ import { ImageSectionComponent } from './image-section/image-section.component';
   exports: [
     MenuButtonComponent,
     MenuItemComponent,
-    SidePanelComponent,
+    MenuComponent,
     ImageSectionComponent
   ],
   declarations: [
     MenuButtonComponent,
     MenuItemComponent,
-    SidePanelComponent,
+    MenuComponent,
     FocusDirective,
     ImageSectionComponent
   ]
