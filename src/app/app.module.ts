@@ -10,9 +10,11 @@ import { HeaderImageComponent } from './home/header-image/header-image.component
 import { CvComponent } from './cv/cv.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   imports: [
+    ChartsModule,
     RouterModule,
     SharedModule,
     RouterModule.forRoot(appRoutes)
