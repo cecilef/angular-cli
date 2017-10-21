@@ -17,6 +17,11 @@ export class MenuButtonComponent implements OnInit {
     this.menuButtonService.open$.subscribe(open => this.active = open );
   }
 
+  onBlur() {
+    this.active = !this.active;
+    this.menuButtonService.open$.next(this.active);
+  }
+
   @HostListener('click', ['$event'])
   onClick($event) {
     this.active = !this.active;
