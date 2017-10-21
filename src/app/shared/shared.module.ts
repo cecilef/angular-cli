@@ -5,29 +5,34 @@ import { MenuItemComponent } from './menu-item/menu-item.component';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
-import { SidePanelComponent } from './side-panel/side-panel.component';
+import { MenuComponent } from './menu/menu.component';
 import { FocusDirective } from './directives/focus/focus.directive';
 import { ImageSectionComponent } from './image-section/image-section.component';
+import { DoughnutChartComponent } from './doughnut-chart/doughnut-chart.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    ChartsModule,
     CommonModule,
     RouterModule
   ],
   exports: [
+    DoughnutChartComponent,
+    ImageSectionComponent,
     MenuButtonComponent,
     MenuItemComponent,
-    SidePanelComponent,
-    ImageSectionComponent
+    MenuComponent
   ],
   declarations: [
+    DoughnutChartComponent,
+    FocusDirective,
+    ImageSectionComponent,
     MenuButtonComponent,
     MenuItemComponent,
-    SidePanelComponent,
-    FocusDirective,
-    ImageSectionComponent
+    MenuComponent
   ]
 })
 export class SharedModule { }

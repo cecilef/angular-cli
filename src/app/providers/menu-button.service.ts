@@ -1,15 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 @Injectable()
 export class MenuButtonService {
 
-  private menuSource: Subject<any> = new Subject<any>();
-  menu$ = this.menuSource.asObservable();
+  open$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(undefined);
 
   constructor() { }
-
-  emitClickAction() {
-    this.menuSource.next();
-  }
 }

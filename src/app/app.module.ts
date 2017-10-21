@@ -7,10 +7,13 @@ import { HomeComponent } from './home/home.component';
 import { appRoutes } from './app.routing';
 import { MenuButtonService } from './providers/menu-button.service';
 import { HeaderImageComponent } from './home/header-image/header-image.component';
-import { CvComponent } from './cv/cv.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
+import { CvModule } from './cv/cv.module';
 
 @NgModule({
   imports: [
+    CvModule,
     RouterModule,
     SharedModule,
     RouterModule.forRoot(appRoutes)
@@ -20,7 +23,8 @@ import { CvComponent } from './cv/cv.component';
     TopBarComponent,
     HomeComponent,
     HeaderImageComponent,
-    CvComponent
+    BlogComponent,
+    ContactComponent
   ],
   providers: [
     MenuButtonService

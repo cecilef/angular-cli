@@ -1,5 +1,5 @@
 <cf-top-bar></cf-top-bar>
-<side-panel [open]="panelOpen">
+<cf-menu [open]="menuOpen">
   <menu-item [label]="'Home'" [routerLink]="'home'" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
     <span class="item-img home-icon"></span>
   </menu-item>
@@ -13,5 +13,5 @@
              [routerLinkActiveOptions]="{exact: true}">
     <span class="item-img contact-icon"></span>
   </menu-item>
-</side-panel>
+</cf-menu>
 <router-outlet></router-outlet>
