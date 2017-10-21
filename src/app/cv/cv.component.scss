@@ -2,7 +2,7 @@
 
 :host {
   display: block;
-  padding-top: 20px;
+  padding-top: $space-xl;
 }
 
 .cv-title {
@@ -10,7 +10,7 @@
   width: 25%;
   margin: auto;
   text-align: center;
-  border: 5px solid transparent;
+  border: $border-thick transparent;
   border-image: linear-gradient(to right, $white 0%, $darker-green 100%) 1;
 }
 
