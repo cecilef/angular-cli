@@ -4,26 +4,13 @@
   <div class="selfie"></div>
   <section class="cv-section">
     <section class="cv-experience align-right">
-      <h4 class="cv-subtile">INTRODUCTION</h4>
-      <p>Introduction paragraph here</p>
-      <h4 class="cv-subtile">EXPERIENCE</h4>
-      <p>Experience paragraph here</p>
+      <cv-introduction></cv-introduction>
+      <cv-experience></cv-experience>
     </section>
     <div class="divider"></div>
     <section class="cv-skills-education align-right">
-      <h4 class="cv-subtile">SKILLS</h4>
-      <h3 class="coding-chart__label">Coding</h3>
-      <div style="display: block">
-        <canvas baseChart
-                [data]="chartData"
-                [labels]="chartLabels"
-                [colors]="chartColors"
-                [chartType]="'doughnut'"
-                (chartHover)="chartHovered($event)"
-                (chartClick)="chartClicked($event)"></canvas>
-      </div>
-      <h4 class="cv-subtile">EDUCATION</h4>
-      <p>Education paragraph here</p>
+      <cv-skills [title]="'Coding'"></cv-skills>
+      <cv-education></cv-education>
     </section>
   </section>
 </div>

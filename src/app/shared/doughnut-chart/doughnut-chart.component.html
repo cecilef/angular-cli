@@ -1,0 +1,10 @@
+<h3 class="coding-chart__label">{{ title }}</h3>
+<div style="display: block">
+  <canvas baseChart
+          [data]="chartData"
+          [labels]="chartLabels"
+          [colors]="chartColors"
+          [chartType]="chartType"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"></canvas>
+</div>
